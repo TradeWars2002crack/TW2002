@@ -1,0 +1,13 @@
+Okay! You're almost done.  You have to now run TEDIT and configure your
+systems node info. (Select (O)- BBS node setup)
+
+If you're running a single line, just configure Node 0 for local use and
+Node 1 for your Modem.  After you've done this, put
+
+SET TWNODE=1
+
+in the Autoexec.bat file for your BBS node and then reboot the machine
+so this new Dos Environment variable takes effect.  If you're running
+under Desqview and cannot use Dos Environment variables, you can optionally
+call TW2002 with a command line variable that looks the same as the 
+above environment variable.  Example:    TW2002 TWNODE=1

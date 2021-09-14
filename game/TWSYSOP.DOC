@@ -1,0 +1,864 @@
+
+                      Trade Wars 2002 Version 3
+
+                        The story continues...
+
+
+
+             by Gary Martin, MaryAnn Martin and John Pritchett
+              Many thanks also to Drew Markham, a.k.a. Videon
+                      for v2 debugging and cleanup.
+
+                          Castle RavenLoft
+
+             Dial  : (785) 842-0300
+             Telnet: loft.martech.net
+             Web   : http://loft.martech.net 
+
+                             Web Sites
+
+             Martech : http://www.martech.net
+             TWv3    : http://www.azi.com/tradewars
+
+
+
+
+
+Welcome!  Right now you're probably dying to configure this program
+and get it running.  Before I tell about that, I just want to put a plug in
+here.
+
+Trade Wars 2002 is the result of over 11 years of game testing and
+development.  The version you have in your hands is v3, our NEW version,
+offerings tons of new features the players requested and some new twists that
+we threw in ourselves!  It is one of the most complex games in the BBS world
+at this time.  You probably can guess about the amount of development time that
+went into this game.  Install and run this game for a few weeks and if you
+agree that it is decent and want to keep it, you will need to register with us.
+The registration fee is very small, just $25.  Being registered will keep you
+in touch with further development of the game and all subsequent releases of
+Trade Wars 2002 will be free of charge to you.  This un-registered version is
+almost fully functional.  There are four options that do not work:
+
+         You cannot edit any values in the Trade Wars Sysop's editor,
+         Players cannot buy any of the other shiptypes in the game, and
+         Players cannot build or enter Citadels on planets.
+         Photon Missiles cannot be purchased.
+
+The rest of the game works 100%  Try it, I think you'll agree that our
+registration fee is cheap for what you get!
+
+We accept Visa, Mastercard, American Express and US funds drawn on a US bank
+ONLY!  Foreign funds will be returned as the cost of processing them is most
+often more than the registration fee itself!
+
+-------------------------- Ordering Info -----------------------------
+
+ To register online, see "Online Ordering Info" below.
+
+ To register via mail, send $25 (US) in check or money order to:
+
+              Martech Software, Inc.
+              P.O. Box 1358
+              Lawrence, Kansas  66044
+
+You will find an accompanying file on your harddisk called TWORDER.FRM,
+please use this to send in your order as it will speed things up.
+
+Please allow 3-4 weeks for your registration code to reach you by return mail.
+We will not transmit registration codes through the net.  And we will not
+call with your codes.  We have very little time to work on the game as it is.
+Also, US Postal Priority Mail doesn't seem to be any faster than regular mail!
+We get registrations from either coast in 3-4 days.  Please include your BBS
+name, type and number as well as your address on the included form TWORDER.FRM.
+
+
+----------------------- ONLINE ORDERING INFO ----------------------------
+
+
+We will have online ordering available on Castle RavenLoft after Sept 1st
+1996.  We're sorry it took so long to make this available, but we will have
+it there for you now.  Call Castle RavenLoft at (785) 842-0300 or Telnet to
+loft.martech.net and you will be able to use Visa, Mastercard or American
+Express to place a credit card order.  Reg Codes will not be available
+immediately, but within 2-3 days of the time you place your order.  We plan
+to have this fully automated as soon as we can finish that application.
+
+
+--------------------------- Update Info ---------------------------------
+
+
+If you registered Trade Wars 1.xx or 0.9x before January 1st, 1994, then
+you are eligible for a free upgrade to the new version 2.xx codes.  You
+will find an update form included with this archive.  Get it to us and
+we'll get you your new codes for 3.xx
+
+
+
+
+       ---------------- Now on to the installation! ----------------
+
+
+
+
+  B E F O R E you do anything else!  Copy the distribution archive 2002V302.ZIP
+  to a nice safe place.  The installation process will delete the one
+  from out of the BBS dir to save system space.  If you intend to
+  continue a v2.xx+ game, backup your data files as well.
+
+  YOU CAN'T REVERSE THE DATA CONVERSION, so back up those files!
+
+
+
+  Step 1: If you are currently running Version 0.90 through 1.03d:
+
+          ERASE ALL FILES IN THE TRADEWAR SUBDIR!  (Optionally install
+          version 3 in a different subdirectory.  You can put it anywhere
+          on your computer as you can fully control where the program
+          looks for its data)  Version 3 is NOT compatible in
+          any way with the files from Version 0.90 through 1.03d  Make
+          sure and erase every file in the TRADEWAR subdirectory!
+
+          if you are currently running Version 2+:
+
+          If you would like to convert your data files to v3, DO NOT
+          ERASE THEM FROM THE TRADEWAR SUBDIR!  If you intend to start
+          a fresh game, then you may delete all files before beginning
+          the installation.  It is not necessary as BIGBANG will clean up
+          all data files.
+
+  Step 2: Unzip 2002V3??.ZIP into your Tradewars game directory and it will
+          create the installation package for you.  You will have to set the
+          Dos Environment variable (more info later) to indicate which node
+          is what.
+
+  Step 3: Run the batch file. (INSTALL.BAT)  It will unzip everything into
+          the current directory, create a directory called ANSI and put
+          *.ANS into that ANSI directory.  If you want to run two versions
+          of the game, make another subdirectory under your main BBS
+          directory and copy EVERYTHING thats in your Tradewars subdirectory.
+          You will then need to make appropriate changes to the BBS setup
+          or to the batch files that you use to call Trade Wars 2002.
+
+ *************************************************************************
+ *************************************************************************
+
+   Installation Notes:
+
+   Upgrading from v2+ to v3 - Backup data files, but leave them in
+     your current game directory.  After installing all new files, run
+     TW2002.EXE to trigger the data conversion process.  The game will detect
+     the version of the data (assumes all pre 3.00 data is 2.xx) and prompt you
+     for conversion to the most current data format.  The data files will
+     be backed up in the same directory.  If a file conflicts with the backup
+     name, you will be prompted to overwrite the file, overwrite all files,
+     or abort.  Once conversion is completed, the game will begin as usual.
+
+     Note:  This conversion process is not two-way, so back up your original
+     data files in a safe place.  Also, the data files and indexes created
+     cannot be rebuilt in case of corruption, so you might consider backing
+     them up with nightly processing.
+
+   Upgrades from versions of Trade Wars prior to 2.00 are not supported.
+   You must run BIGBANG.EXE to begin a new v3 game and will lose your
+   current game state.
+
+Share issues:
+
+   SHARE.EXE must be loaded to play Trade Wars.  If TW detects a problem
+   with Share, it reports an error and will not load.  This error is "Share
+   not loaded or unresponsive".
+
+
+   Please NOTE!!!  During a first time initialization, the BigBang Universe
+   Creator must be run.  This process can take a while on slower machines.
+
+
+   A LARGE portion of the Trade Wars 2002 Universe is contained in the
+   External maintenance program called EXTERN.EXE   This program must be
+   run once a day.  It does NOT support the modem so it should not be run
+   as a logon event for users.  (it also gives out info that users shouldn't
+   see).  Run it in your nightly maintenance batch file.  We have noticed that
+   some other door's external maintenance files screw up the environment so
+   that EXTERN will not function correctly. We recommend that you put
+   EXTERN.EXE *FIRST* in your nightly batch file.
+
+
+
+              ------  Running TW2002 on Your BBS  ------
+
+The new version of TW2002 runs quite a bit differently than the
+previous versions.  The Node configuration file determines how the system
+runs, what type of door drop file should be read (and where it is) and
+how communications should be handled.  There are only two command line
+options that are used regularly. (there are some optional override command
+line options available).
+
+NOXMS   The NoXms switch tells TW2002 to NOT use Extended memory to load
+        its overlay files.
+
+NOEMS   The NoEms switch does the same for Expanded memory.
+
+By default TW2002 will try to use Xms memory first, then Ems memory.  If
+neither are available (in sufficient quantity) then the game will not load
+its overlays into memory and your disk usage will rise considerably as the
+program loads and unloads modules from the overlay file.
+
+EXAMPLE:
+
+  TW2002 NOXMS NOEMS
+
+Calling Trade Wars 2002 this way would insure that no high memory was used
+at all.  (Sometimes useful for systems such as Desqview)
+
+
+
+a third, optional command line item, is an overlay buffer size.
+
+BUFFER=x   Where x is the number of bytes to set aside for the overlay buffer.
+
+By default, the game tries to keep 165,000 bytes for dynamic allocations
+during the game, and devotes the rest to the overlay buffer.  The buffer
+must be a minimum size (80,000 bytes currently), so there may be less than
+165,000 bytes left over after the buffer is set.  You may override the default
+if you would like to squeeze a little extra performance out of the game.
+The 165,000 bytes is intended to handle a 5000 sector game, so smaller games
+will require less for data allocation.  In that case, you could force the
+overlay to a value that leaves about 32k-64k free while the game is running.
+Check the @ command in the game for an indication of the number of overlay
+reloads occuring as you play.  Each reload indicates that a block of the
+overlay was moved from either disk (if no EMS or XMS is used), or memory.
+Obviously the fewer, the better, though this will have a greater effect if
+loading the overlay from disk without caching.
+
+When adjusting the overlay buffer, it is important that the memory available
+from the main command prompt be about 30K (see @ command).  By default, For
+a 5000 sector game the overlay setting should leave 32k free just after a
+player enters.  If there wasn't enough memory to meet this request, the
+amount could be lower.
+
+
+
+The fourth, optional command line item, is a node specifier.
+
+TWNODE=x   Where x is a number from 0 to 32000
+
+The fifth, optional command line item is useful if you want to run TW2002
+on a Local area network.  Setup the nodefile for Local use, and call the
+game with the TWUSER=<username> command line option.
+
+TWUSER=name  Where name is from 1 to 40 characters long.
+
+The sixth, optional command line is a default data directory specifier.
+
+DATA=path  Where path is the location of the Trade Wars data files.
+
+This path is overridden by the node-specific data directory if that path
+is not default.  See RUNNING MULTIPLE TW GAMES later in this document.
+
+The seventh, optional command line is the video write mode for local
+game output.
+
+VIDEO=mode  Where mode is FAST or SLOW.
+
+This defaults to VIDEO=FAST, and should work with most environments.
+
+Fast mode writes directly to video memory.  This doesn't work in all
+environments, for example virtual machines where physical video memory
+doesn't exist where it would on a physical machine.  In this case, you
+can either configure your environment for video memory redirection,
+which is automatic for most modern virtual machines, or turn direct
+video writes off using VIDEO=SLOW.
+
+The 8th, optional command line is the timeslicing mode.
+
+MULTITASK=YES,NO
+
+With MULTITASK=YES, the game will relinquish the timeslice not only
+when it's idle, but frequently during long processing.  If you find that
+the displays and input are responding too slowly, you might try turning
+the MULTITASK option to NO.
+
+With MULTITASK=NO, the game will still relinquish the timeslice when
+idle, but will not during long processing.  Under operating systems
+with preemptive multitasking (Win95/98/NT), there is no real need to
+timeslice during processing.  Timeslicing during idle is still done
+because the game would otherwise waste valuable CPU doing nothing.
+
+The default setting is MULTITASK=NO for Win95/98/NT and MULTITASK=YES
+for DOS and OS/2.
+
+EXTERN also allows this command, but it attempts to detect if there are
+any active game sessions and will run in multitasking or non-multitasking
+mode depending.  You can override the auto-detect by supplying the command
+line MULTITASK=YES or MULTITASK=NO.
+
+The 9th, optional option is SHARE.
+
+Using the command line option SHARE tells TW2002 not to bother detecting
+SHARE.EXE.  Some environments supply SHARE functionality without complying
+with the full SHARE specification.  In this case, it may not be detected
+but still may run.  Skipping the detection step will solve this problem.
+
+
+The standard method to setup TW2002 is to use a Dos Environment variable in
+the autoexec batch file to indicate which node a given machine is running.
+
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ      ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป      บ
+บ      บ                                                          บ      บ
+บ      บ     SET TWNODE=x   Where x is a number from 0 to 32000   บ      บ
+บ      บ                                                          บ      บ
+บ      ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ      บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Sample Autoexec.bat entry
+
+path=c:\dos
+set TWNODE=1     <============  Upper or lower case doesn't matter
+prompt $p$g
+
+If you're running the DPMI version, also include the line
+
+SET RTM=EXTMAX 1024   <=======  Allocates 1024K bytes extended memory
+
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ                                                                         บ
+บ   Trade Wars 2002 supports many different BBS interchange file formats. บ
+บ            Select one from the following list for YOUR BBS!             บ
+บ                                                                         บ
+บ    BBS Name             Interface File Name    Nodeedit Door Type       บ
+บ    -------------------  ---------------------- -------------------      บ
+บ    World War IV         CHAIN.TXT               WWIV                    บ
+บ    Generic System       DOOR.SYS                DOOR                    บ
+บ    QuickBBS             DORINFO1.DEF            QBBS                    บ
+บ    PcBoard              DOOR.SYS                DOOR                    บ
+บ    R.B.B.S.             DORINFO1.DEF            RBBS                    บ
+บ    RyBBS                CURRUSER.BBS            RYBS                    บ
+บ    Wildcat 3.x          CALLINFO.BBS            WILD                    บ
+บ    Wildcat 4, 5         DOOR.SYS                DOOR                    บ
+บ    Telegard             DORINFO1.DEF            RBBS                    บ
+บ    Spitfire             DOOR.SYS                DOOR                    บ
+บ    Local Mode, no BBS                           LOCL                    บ
+บ                                                                         บ
+บ                                                                         บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+
+Please note!!!  This game uses much of available DOS memory.  We
+recommend you shrink out most of your BBS before running TW2002.
+
+This system is delivered in an "as-is" basis.  We do not guarantee that this
+system will work on your BBS.  Any problems with your system, lost data or
+corrupted files are your problems to solve.  As distributed this package will
+work fine on a PC-compatible running WWIV or QBBS.  If your dog gets sick, you
+lose your job or one of your users gets into a gunfight over this game with
+you, it is still your responsibility.
+
+We *ARE* glad to try and help if you are having problems getting this system
+installed on your board.
+
+
+
+Good luck trading and watch out for the Ferrengi!
+
+
+Gary A. Martin,    #1  and            Castle RavenLoft (913)832-2888
+Mary Ann Martin,   #2                 AutoSysop Validation, V.32bis
+
+
+
+Common Technical Problems and answers:
+
+
+To help troubleshoot the game, Trade Wars sends error messages to standard
+output.  You can capture output to a file and see what messages were sent
+even if they weren't visible on the screen.  Just run the game like this:
+
+At the command line:
+
+  TW2002 > ERR.LOG
+
+From a batch file:
+
+  TW2002 TWNODE=%1 > ERR%1.LOG
+
+Then view ERR.LOG or ERR?.LOG after the game ends to see what it reported.
+It is important to include the node number in the log file when calling the
+game from a batch file because if two sessions attempt to open the same log
+file there will be a share violation.  This is a confusing situation as no
+error will can be generated.
+
+       ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+       บ                                                       บ
+       บ   W W I V   S Y S O P S ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! บ
+       บ                                                       บ
+       บ  Make sure that Use_Dos_Interrupts is set to NO for   บ
+       บ  your Chainedit entry of TW2002.  YOU MUST SET THIS   บ
+       บ  off! It's very important.  Otherwise you will see    บ
+       บ  double characters remotely and it can lock up your   บ
+       บ  system!!!!!!!!!!!                                    บ
+       ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Q: I'm using the DPMI version.  Each game allocates ALL of my extended memory
+   even though only a small amount is actually used.
+
+A: The runtime memory manager used by Trade Wars allocates all of the available
+   extended memory by default.  To override this setting, you must specify
+   an environment variable with the maximum extended memory.  Add this line
+   either to your main AUTOEXEC.BAT or the batch file running the game:
+
+   SET RTM=EXTMAX 1024
+
+   This example specifies 1024K for each session.  This can be decreased
+   depending on the memory use of your particular game.  20K sector games
+   will use much of this amount, but a 1000 sector game will use much less.
+
+   NOTE:  We recommend using this environment variable for not only TW2002.EXE,
+   but TEDIT.EXE, EXTERN.EXE and NONPSERV.EXE.
+
+Q: When I get a couple of games running simultaneously, the input and display
+   seems to really bog down.
+
+A: Trade Wars releases the timeslice multiple times during long processes
+   like displaying ANSIs.  Depending on the timeslicing settings, the OS may
+   be slow in returning the focus to a game after it has been released.  The
+   result will be a significant slow-down in the game.  This problem seems
+   to be worse for Win95 than WinNT.
+
+   A new command line switch has been added (v3.09) to address this problem.
+   You can set the switch to MULTITASK=NO to avoid relinquishing the timeslice
+   during processing.  Setting to MULTITASK=YES will force the game to release
+   the timeslice more frequently.  Win95/98/NT games will default to
+   MULTITASK=NO and DOS and OS/2 games will default to MULTITASK=YES.
+
+Q: Whenever EXTERN is running, active games slow to a crawl.
+
+A: Starting with v3.09, EXTERN will frequently release its CPU time so that
+   other active programs will be more responsive.
+
+   This behavior can be controlled with the MULTITASK= switch.  The default
+   value for the switch for all operating systems is YES.  If you are certain
+   that no other programs will be running when EXTERN is active, or you
+   find that other applications respond just fine while EXTERN is running, you
+   can set MULTITASK=NO to significantly increase the speed of EXTERN processing.
+
+Q: I can run the first game session fine but I can't start a second game.  It
+   starts to run but then kicks me back out immediately.  It doesn't report
+   any errors.
+
+A: If you're capturing error output to a log file, be sure you're not trying
+   to send the output to the same error log.  See "Common Technical Problems"
+   above for a description of capturing error reports.
+
+
+
+Q: I can run one or more game fine, but after a certain number of games are
+   running I get an error trying to run an additional game.
+
+A: This error could be "file not found" or something else.  The cause of this
+   problem is usually that there aren't enough files allocated for DOS in the
+   FILES= line of CONFIG.SYS.  Even though Windows allows many files to be
+   open simultaneously, Trade Wars is a DOS program and is still restricted
+   by the number of files specified in CONFIG.SYS.  Each game session currently
+   requires about 15 file handles.
+
+   We recommend you set at least FILES=120 in CONFIG.SYS.
+
+
+
+Q: When running games on multiple machines that point to a shared data
+   directory, one or more of the sessions can't receive messages.
+
+A: Clock synchronization is crucial when running on more than one machine.
+   Beginning with v3.05, a new global command has been added to synchronize
+   the machines.  Here's what you should do.
+
+     1:  Run a local session on each machine
+     2:  From the main machine, press &.  This will synchronize all other
+         machines running local sessions to the time of this machine.
+
+   You can certainly do this manually, if you'd prefer.  The clocks need to
+   be synchronized to within a second or two.
+
+
+
+Q: Trade Wars seems to run fine in Local mode, but goes crazy for the remote
+   callers?
+
+A: TW2002 handles its own I/O.  Make sure that you are NOT using some other
+   utility program or the BBS itself to handle the Modem I/O.  A program
+   such as Gateway is not needed with TW2002.  Also, make sure you are using
+   the door mode on your BBS that removes the BBS from memory.  This is the
+   safest setting.
+
+
+
+Q: No matter who runs the game, it always comes up as the same player or
+   as me! (the sysop) what is happening?
+
+A: TW2002 looks for your Door Interface file wherever you told it to.  If
+   you have it pointing to the wrong one (not one the BBS makes whenever
+   a user tries to run the door) then it will always try to run that
+   configuration.  Also, if your Dos Environment variable TWNODE isn't
+   set, it will default to Node 0 (local mode)
+
+
+
+Q: Running TW2002 on WWIV, remote callers get double characters?
+
+A: Under WWIV's Chainedit, you have Use Dos Interrupts set to "Yes".  Turn
+   that setting off as you are asking both the BBS and Trade Wars to transmit
+   characters to the remote user.
+
+
+
+Q: When I run TW2002 I keep getting error codes 002 or 103.? Its never
+   worked since I got it.
+
+A: You never ran the INSTALL.BAT file when you first got the archive.  If you
+   do not run this, then the appropriate data files were not created.
+
+
+
+Borland Turbo Pascal Error Messages you can get with TW2002:
+
+Number Meaning                 With regards to TW2002
+------ ----------------------- -------------------------------------------
+    2  File not found          You are missing a file.
+    3  Path not found          You are not using the batch files we included.
+    4  Too many open files     Increase your FILES= statement in your
+                               CONFIG.SYS  We recommend about 127.
+    5  File access denied      Either a file has been set to read only, a
+                               directory is full, a RENAME tried to rename to
+                               an existing file name or a file is not open.    s
+    6  Invalid File Handle     Your file handles have become corrupted, DOS
+                               err.
+
+  100  Disk Read Error         An attempt was made to read past the end of a
+                               file most often.  Something is corrupted in the
+                               record pointers.
+  101  Disk Write Error        Generall an indication of a full hard disk.
+  103  File Not Open           File is closed when it shouldn't have been.
+  104  File Not Open for Input Text file is closed when it shouldn't have been.
+  105  File Not Open for Output "   "     "   "       "      "       "
+  106  Invalid Numeric Format  Generally this is only caused when reading a
+                               BBS interface file (that has the user's info).
+                               It happens when TW2002 is trying to read a
+                               numeric value from an interface text file and
+                               there isn't a valid number in the file.
+
+  Errors 150 through 162 indicate various HARDWARE failures.  If you're getting
+  these, then something is wrong with your PC and I can't be of much help
+  there.
+
+	Some commone ones are:
+  152  Drive not ready         Controller problem or drive not spinning
+  154  CRC error in data       Scrogged disk (real technical eh? (grin))
+  156  Disk Seek error         Head problem or bad controller
+  157  Unknown media type      Did you just change to DOS 4.0 or 5.0???
+  158  Sector not found        Head problem or bad controller
+  159  Printer out of paper    Hit Control P!  Disable printer logging.
+  160  Device write fault      Disk problem
+  161  Device read fault       Disk problem
+  162  Hardware Failure        Reported due to Dos sharing violations,
+                               mostly having to do with Lan or multi-
+                               user problems.  If you encounter this
+                               error, then you have a configuration
+                               problem with your multinode BBS setup.
+                               Make sure Share is being run.  Also make
+                               sure that the Trade Wars files are setup
+                               for a Shared access mode.  You can set the
+                               executables and the .ANS files to Read only
+                               to facilitate this.
+
+  Fatal errors generally indicate a problem that must be fixed before you
+  can continue to run the game.
+
+  200  Division by zero        Now I hope you cannot make one of these happen
+                               as I check before every division to make sure
+                               it DOESN'T happen, but you it might.
+  201  Range Check Error       Array index out of range.
+  202  Stack Overflow          NOT ENOUGH MEMORY for the stack!  Type @ while
+                               TW2002 and it will tell you how much memory
+                               you have left with the game running.  If you're
+                               under 5K, then you're in trouble.
+  203  Heap overflow error     Same as 202.
+  204  Invalid Pointer Op.     Can be caused the same as 202.
+  205  Floating point overflow Most likely someone has used the editor
+                               and put an insane amount of credits in a credits
+                               field somewhere.  YOU CANNOT make enough money
+                               in TW2002 to cause this with normal play.
+  207  Invalid Floating point  You have a real thats trying to be converted to
+       Operation               a Long int and its greater than 2 billion.
+  209  Overlay File read error TW2002 had a problem getting an overlay from the
+                               TW2002.OVR file.  If you're not using EMS, then
+                               the .OVR file is missing or is setting on a bad
+                               sector on your harddisk.  If you are running EMS
+                               then you have a bad memory chip! (yak)
+
+  --------------------------------------------------------------------------
+
+  There is a new, hidden function inside the game, accessible as a global
+  command.  The @ key will display info about your system's memory:
+
+  <@>  Game Details.  This function (a global key) displays important
+       info concerning the active game session.
+
+
+       The title area displays the Trade Wars version, and the environment
+       that the game thinks it is running under.  If this is incorrect,
+       the game may not function properly.  Supported environments are
+       WinNT/95, Win3, DOS, OS2, and DESQview.
+
+       Example:
+
+       Trade Wars 2002 Version 3.x
+       WinNT Detected.
+
+
+       Memory Status:  Displays the current memory available to this
+         session, as well as the largest free block and minimum bytes
+         available so far.  If, while at the main command prompt, the
+         current memory is much greater than 30K, you might consider
+         overriding the BUFFER size to make more memory available for
+         the overlay buffer.  This will increase the game's efficiency.
+         See the BUFFER parameter in this document.
+
+         The minimum bytes available value is a danger flag.  If this
+         value becomes low in relation to the Object Memory, you may need
+         to attempt to gain more memory for your sessions, or BIGBANG a
+         smaller universe.
+
+       Example:
+
+       32,392 bytes available.
+       32,392 largest free block available.
+       29,792 minimum bytes available this session.
+
+
+       Stack Status:  Displays the current and minimum stack available
+         to the game.  The minimum value is an estimate, and the actual
+         value is always less than or equal to this amount.  The stack
+         allocation is static and defined when the game is compiled.  If
+         you find the stack running dangerously low, report it to Martech,
+         and we'll increase the stack size with the next release.
+
+       Example:
+
+       32,920 stack bytes available.
+       30,154 minimum stack bytes available this session.
+
+
+       Object Allocation Status:  Indicates the current and maximum pool of
+       memory allocated for dynamic structures within the game.  This pool
+       grows and shrinks as you access different features of the game.
+
+       Example:
+
+       132,856 bytes allocated.
+       135,456 maximum bytes allocated.
+
+
+       Overlay Buffer Statistics:  These stats help you determine the optimum
+         overlay configuration for your system.  By default, the program
+         attempts to allow about 135,000 bytes for dynamic allocation, and
+         30,000 bytes available for future allocation when at the main
+         command prompt.  The rest of memory available is given to the
+         overlay buffer.  A minimum buffer size currently is 80,000 bytes.
+         In order to meet this requirement, your game may show less than
+         30,000 bytes free at the main command prompt.
+
+         You can set this value yourself with the BUFFER= command line
+         parameter (see RUNNING TW2002 ON YOUR BBS) to free up some more
+         memory, or increase the buffer size to improve game performance.
+         The Reload Count gives an indication of the number of times an
+         overlay has been reloaded.  A smaller buffer will result in a
+         higher reload count, and a larger buffer a smaller count.
+
+         If this line reports "Loading from disk", then you have either
+         disabled EMS, or there wasn't enough EMS memory available to load
+         the overlay file.  We strongly recommend loading the overlay from
+         EMS.  This requires enough memory to hold the entire TW2002.OVR
+         file.  At this release, 460K will suffice.
+
+       Example:
+
+       Size 80,000 Bytes, Reload Count 99, Loading from EMS.
+
+
+       Average Interval Lag:  Another warning sign, this value should
+         ideally be small.  This is a measurement of the average amount
+         of time spent in interval processing.  If it approaches or
+         exceeds the interval period (the delay between background processes,
+         typically one second), there is too much load on the game.  Move
+         odds for Aliens and Ferrengi will effect this load, particularly
+         in older games.
+
+       Example:
+
+       0 hundredths
+
+
+Recommended Environment:
+
+  Trade Wars 3 relies heavily on disk access to achieve the interactive
+  feel of the game.  Disk caching is highly recommended to limit the
+  frequency of actual hard-disk hits.  There is a noticable difference
+  between a game running with and without disk caching.  Win95 and WinNT
+  handle this quite nicely.  For a true DOS mode, try SmartDrive.
+
+  This version of the game has been optimized for Windows NT server running
+  Wildcat 5.  It has shown good performance under Windows 95 and DOS.  No
+  testing has been done under OS/2, although the operating system is
+  detected.  NOTE:  I have had reports that the DPMI version works better
+  than the standard under OS/2.
+
+Notes for DESQview users:
+
+  Since DESQview uses a substantial amount of DOS memory, you may not be able
+  to run a full-scale Trade Wars game.  Try creating a game with various
+  settings for sectors, maximum users, ships, planets, etc.  These will all
+  effect the amount of dynamic memory required to run the game.
+
+  Share must be loaded prior to starting DESQview, and I recommend running
+  SmartDrive or another disk caching program as well.
+
+  If you won't be running a disk cache, you need to specify enough expanded
+  memory available to load TW2002.OVR.  Otherwise, overlay access will come
+  from the hard drive, which may will slow the game down on older machines.
+  Currently, about 460K will suffice.
+
+  I have run a maximum universe game under the DESQview Big DOS window,
+  having set the Maximum Expanded Memory to 460K to hold the overlay file.
+  With about 530K conventional memory for the window, this game runs well.
+  As the game's main executable increases in size, these amounts may increase.
+
+  Once the game has started, check the @ function to view the characteristics
+  of your session.  You would like the Current Bytes Available to stay at about
+  30K when at the main prompt.  Check that the Lowest Bytes Available doesn't
+  get too low.  You would also like the Overlay Buffer Statistics to report a
+  low Reload Count, and Loading from EMS.
+
+  Keep the BUFFERS= setting in CONFIG.SYS reasonable.  These buffers reside
+  in DOS memory, and can limit the amount of memory available to TW.
+
+Trade Wars DPMI Version:
+
+  What is DPMI?
+
+  DPMI is a specification that allows DOS programs to run in protected mode
+  instead of real mode.
+
+  What are the benefits of the DPMI version?
+
+  If you're having trouble running large games because you run out of DOS
+  memory, you could benefit from the DPMI version.  Protected mode programs
+  aren't limited by the 640K memory barrier.  You will have access to all
+  extended memory available on your system.
+
+  If you don't have a math-coprocessor, you should run the DPMI version.  The
+  math-coprocessor emulation library is large enough that we felt it should
+  not be included in the standard version to keep the size of the main
+  executable as small as possible.  The library is included with the DPMI
+  version because memory is not as much of a concern.
+
+  If you own the Gold Edition, you will be able to run universes with greater
+  than 5000 sectors.  These universes take so much memory that the real-mode
+  version is not capable of running them.  A maximum 20,000 sector universe
+  could take as much as 500K memory per game session.
+
+  IMPORTANT:  If you run the DPMI version, we highly recommend that you add
+  a special environment variable to your batch file.  This variable will
+  limit the amount of extended memory allocated for the game.  Without this
+  variable, each session will grab the full amount of extended memory available.
+  For example, if you have 64 meg extended memory, each session will allocate
+  the FULL 64 meg (this is possible with virtual memory).  You can safely
+  limit the extended memory to 1024K, and using the @ key for your particular
+  game you can modify this amount to optimize your memory use.  A session
+  should have at least 30K available to it at the main command prompt right
+  after startup.
+
+  To allocate 1024K extended memory to the DPMI version, add this line to your
+  batch file:
+
+  SET RTM=EXTMAX 1024
+
+  This environment variable should be applied to TW2002.EXE, TEDIT.EXE,
+  EXTERN.EXE and NONPSERV.EXE for optimal performance.
+
+Trade Wars Gold Edition:
+
+  There are many new features included in the Trade Wars Gold Edition.  You
+  can view the accompanying document, TWGOLD.DOC, for information about that
+  product.  You can also access the Gold editors in TEDIT and, though you'll
+  be unable to make any changes, you'll have full access to the context-
+  sensitive help screens.  See TWORDER.FRM and TWUPDATE.FRM for instructions
+  about registering the Gold Edition or upgrading your game to Gold features.
+
+Changes to TEDIT:
+
+  Some new features have been added to TEDIT.  They are self-documenting.
+  Also, the functionality of the TEDIT prompts has been revamped.  The range
+  prompt bears mentioning.
+
+  Range input text (Low to High) [Default] : _
+
+  The Low and High values, if present, are boundaries for the input.  The
+  default is the current value associated with the input, so that a <CR>
+  will leave the field unchanged.
+
+  A value can be entered (as long as it falls within the range), or one of
+  two special keys may be used.
+
+  < : Enter minimum value.  The prompt is terminated with the Low value
+      entered as the result.  The , key will function identically.
+  > : Enter maximum value.  The prompt is terminated with the High value
+      entered as the result.  The . key will function identically.
+
+Running Multiple TW Games:
+
+  You can set up a main game directory and run multiple individual games from
+  other subdirectories.  For example, you could create a directory C:\TW2002
+  for the game files and then create three games running in directories
+  C:\TW2002\GAME1, C:\TW2002\GAME2, and C:\TW2002\GAME3.  Any game specific
+  data files will be created in the subdirectory for that specific game.
+  To create these games, go into the main game directory, C:\TW2002, and
+  run BIGBANG with the DATA= command pointing to the desired directory.
+  For game 1, that would be
+
+  CD \TW2002  
+  BIGBANG DATA=C:\TW2002\GAME1
+
+  This will generate the files TW*.DAT and TWINDEX.NDX, plus any Gold data
+  files in the subdirectory GAME1\GOLD.
+
+  The only data file that will not be generated in the individual game directory
+  is TWNODE.DAT, the BBS node information file.  That file will always reside
+  in the main executable directory.
+
+  To run these individual games by BBS node, set the data path for each node.
+
+  To run these games from any node, leave the BBS node data path set to
+  default and pass the DATA= command to the game when it is called.  For
+  example, you would run game 1 like this:
+
+  TW2002 DATA=C:\TW2002\GAME1 or
+  TEDIT DATA=C:\TW2002\GAME1 or
+  EXTERN DATA=C:\TW2002\GAME1
+
+  It is not necessary to change into the directory of either the game or
+  the data files before running.  Simply execute the game with the full path
+  and file name and it will change into the proper directory at execution.
+
+  If no data path is specified in either the node data path or with a DATA=
+  command, the game will look for the data files in the same directory as the
+  game executables.
+
+
+Well this covers a large portion of the technical support for TW2002.  If you
+have further questions, contact us at Martech Software via US Mail or via our
+Fax machine.   We have also re-opened Castle RavenLoft for tech support.  You
+will get full access to the TWs support area on your first call.
+
+
